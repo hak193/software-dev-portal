@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Technical blog posts and insights about software development, web technologies, and industry trends">
+    <title>Blog | Brandon Brouillard - Software Developer & Owner of I-DevR Coding</title>
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <!-- Custom Styles -->
+    <link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body class="bg-gray-50 font-inter">
+    <!-- Navigation -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <div class="flex">
+                    <div class="flex-shrink-0 flex items-center">
+                        <a href="/" class="text-2xl font-bold text-blue-600">JD</a>
+                    </div>
+                </div>
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="about.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">About</a>
+                    <a href="portfolio.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Portfolio</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Services</a>
+                    <a href="blog.html" class="text-blue-600 px-3 py-2 rounded-md text-sm font-medium">Blog</a>
+                    <a href="contact.html" class="bg-blue-600 text-white px-4 py-2 rounded-md text-sm font-medium hover:bg-blue-700">Contact</a>
+                </div>
+                <div class="md:hidden flex items-center">
+                    <button class="mobile-menu-button">
+                        <i class="fas fa-bars text-gray-700 text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- Mobile menu -->
+        <div class="hidden mobile-menu md:hidden">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="about.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">About</a>
+                <a href="portfolio.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Portfolio</a>
+                <a href="services.html" class="text-gray-700 hover:text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Services</a>
+                <a href="blog.html" class="text-blue-600 block px-3 py-2 rounded-md text-base font-medium">Blog</a>
+                <a href="contact.html" class="bg-blue-600 text-white block px-3 py-2 rounded-md text-base font-medium">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Blog Header -->
+    <section class="pt-32 pb-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h1 class="text-4xl font-extrabold text-gray-900 sm:text-5xl">
+                    Technical Blog
+                </h1>
+                <p class="mt-4 text-xl text-gray-500">
+                    Insights, tutorials, and thoughts on software development
+                </p>
+            </div>
+
+            <!-- Search and Categories -->
+            <div class="mt-12 flex flex-col md:flex-row justify-between items-center">
+                <div class="w-full md:w-64 mb-4 md:mb-0">
+                    <div class="relative">
+                        <input type="text" placeholder="Search articles..." class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-600 focus:border-transparent">
+                        <i class="fas fa-search absolute right-3 top-3 text-gray-400"></i>
+                    </div>
+                </div>
+                <div class="flex flex-wrap gap-2">
+                    <button class="px-4 py-2 bg-blue-600 text-white rounded-full hover:bg-blue-700">All</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">Web Development</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">Cloud Computing</button>
+                    <button class="px-4 py-2 bg-gray-200 text-gray-700 rounded-full hover:bg-gray-300">DevOps</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Post -->
+    <section class="py-12 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="bg-blue-50 rounded-2xl overflow-hidden shadow-lg">
+                <div class="md:flex">
+                    <div class="md:flex-shrink-0">
+                        <img class="h-48 w-full object-cover md:h-full md:w-48" src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Featured blog post">
+                    </div>
+                    <div class="p-8">
+                        <div class="uppercase tracking-wide text-sm text-blue-600 font-semibold">Featured</div>
+                        <a href="#" class="block mt-1 text-2xl font-semibold text-gray-900 hover:text-blue-600">
+                            Building Scalable Microservices with Docker and Kubernetes
+                        </a>
+                        <p class="mt-2 text-gray-500">
+                            Learn how to design, deploy, and manage microservices architecture using Docker containers and Kubernetes orchestration.
+                        </p>
+                        <div class="mt-4">
+                            <span class="text-gray-500"><i class="far fa-calendar mr-2"></i>March 15, 2024</span>
+                            <span class="ml-4 text-gray-500"><i class="far fa-clock mr-2"></i>15 min read</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Posts Grid -->
+    <section class="py-12 bg-gray-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Blog Post 1 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg" alt="Blog post image">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">React</span>
+                            <span class="ml-2 text-gray-500 text-sm">March 10, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600">
+                                Modern State Management in React with Redux Toolkit
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Explore the latest features and best practices for managing state in React applications using Redux Toolkit.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-500"><i class="far fa-clock mr-2"></i>10 min read</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 2 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg" alt="Blog post image">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">AWS</span>
+                            <span class="ml-2 text-gray-500 text-sm">March 5, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600">
+                                Serverless Architecture with AWS Lambda
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            A comprehensive guide to building serverless applications using AWS Lambda and API Gateway.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-500"><i class="far fa-clock mr-2"></i>12 min read</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 3 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Blog post image">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Security</span>
+                            <span class="ml-2 text-gray-500 text-sm">March 1, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600">
+                                Web Security Best Practices for Developers
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Essential security practices every developer should know to protect web applications from common vulnerabilities.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-500"><i class="far fa-clock mr-2"></i>15 min read</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 4 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3183153/pexels-photo-3183153.jpeg" alt="Blog post image">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">TypeScript</span>
+                            <span class="ml-2 text-gray-500 text-sm">February 25, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600">
+                                Advanced TypeScript Features You Should Know
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Deep dive into advanced TypeScript features that can improve your code quality and developer experience.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-500"><i class="far fa-clock mr-2"></i>8 min read</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 5 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3183132/pexels-photo-3183132.jpeg" alt="Blog post image">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">DevOps</span>
+                            <span class="ml-2 text-gray-500 text-sm">February 20, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600">
+                                Implementing CI/CD with GitHub Actions
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Step-by-step guide to setting up automated CI/CD pipelines using GitHub Actions for your projects.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-500"><i class="far fa-clock mr-2"></i>10 min read</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+
+                <!-- Blog Post 6 -->
+                <article class="bg-white rounded-lg shadow-lg overflow-hidden">
+                    <img class="h-48 w-full object-cover" src="https://images.pexels.com/photos/3183150/pexels-photo-3183150.jpeg" alt="Blog post image">
+                    <div class="p-6">
+                        <div class="flex items-center mb-4">
+                            <span class="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">Performance</span>
+                            <span class="ml-2 text-gray-500 text-sm">February 15, 2024</span>
+                        </div>
+                        <h2 class="text-xl font-bold text-gray-900 mb-2">
+                            <a href="#" class="hover:text-blue-600">
+                                Web Performance Optimization Techniques
+                            </a>
+                        </h2>
+                        <p class="text-gray-600 mb-4">
+                            Learn how to optimize your web applications for better performance and user experience.
+                        </p>
+                        <div class="flex items-center justify-between">
+                            <span class="text-gray-500"><i class="far fa-clock mr-2"></i>12 min read</span>
+                            <a href="#" class="text-blue-600 hover:text-blue-700">Read More →</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Pagination -->
+            <div class="mt-12 flex justify-center">
+                <nav class="relative z-0 inline-flex rounded-md shadow-sm -space-x-px" aria-label="Pagination">
+                    <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-l-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <span class="sr-only">Previous</span>
+                        <i class="fas fa-chevron-left"></i>
+                    </a>
+                    <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">1</a>
+                    <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-blue-600 text-sm font-medium text-white">2</a>
+                    <a href="#" class="relative inline-flex items-center px-4 py-2 border border-gray-300 bg-white text-sm font-medium text-gray-700 hover:bg-gray-50">3</a>
+                    <a href="#" class="relative inline-flex items-center px-2 py-2 rounded-r-md border border-gray-300 bg-white text-sm font-medium text-gray-500 hover:bg-gray-50">
+                        <span class="sr-only">Next</span>
+                        <i class="fas fa-chevron-right"></i>
+                    </a>
+                </nav>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="py-12 bg-blue-600">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center">
+                <h2 class="text-3xl font-bold text-white mb-4">Subscribe to My Newsletter</h2>
+                <p class="text-xl text-blue-100 mb-8">Get the latest articles and tech insights delivered to your inbox</p>
+                <form class="max-w-md mx-auto">
+                    <div class="flex gap-4">
+                        <input type="email" placeholder="Enter your email" class="flex-1 px-4 py-3 rounded-lg focus:ring-2 focus:ring-blue-400 focus:border-transparent">
+                        <button type="submit" class="px-6 py-3 bg-white text-blue-600 rounded-lg font-medium hover:bg-blue-50 transition-colors">
+                            Subscribe
+                        </button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800">
+        <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-center space-x-6">
+                <a href="#" class="text-gray-400 hover:text-gray-300">
+                    <i class="fab fa-github text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-300">
+                    <i class="fab fa-linkedin text-2xl"></i>
+                </a>
+                <a href="#" class="text-gray-400 hover:text-gray-300">
+                    <i class="fab fa-twitter text-2xl"></i>
+                </a>
+            </div>
+            <div class="mt-8 text-center text-gray-400">
+                <p>&copy; 2024 John Doe. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="assets/js/scripts.js"></script>
+</body>
+</html>
